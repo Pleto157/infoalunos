@@ -1,0 +1,460 @@
+<!-- disciplina-programa.html -->
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InfoAlunos — Disciplina • Programa</title>
+
+  <!-- CSS global (obrigatório em todas as páginas) -->
+  <link rel="stylesheet" href="./css/dashboard.css" />
+  <link rel="stylesheet" href="./css/disciplina-programa.css" />
+</head>
+
+<body class="page-dashboard">
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="brand">
+        <img class="brand-logo" src="img/logo-uma.png" alt="Universidade da Madeira" />
+        <div class="brand-text">
+          <div class="brand-name">InfoAlunos</div>
+          <div class="brand-sub">Serviço de Informação dos Alunos</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topbar-center">
+      <div class="topbar-title">InfoAlunos — Serviço de Informação dos Alunos</div>
+      <div class="topbar-version">v3.1.4</div>
+    </div>
+
+    <div class="topbar-right">
+      <nav class="topbar-actions" aria-label="Ações rápidas">
+        <a class="chip" href="./correio.html">O meu Correio</a>
+        <a class="chip" href="./horario.html">O meu Horário</a>
+        <a class="chip" href="./servicos-matriculas-inscricoes.html">Matrículas/Inscrições</a>
+      </nav>
+
+      <div class="user">
+        <div class="lang">
+          <a href="#" class="lang-link">PT</a>
+          <span class="lang-sep">|</span>
+          <a href="#" class="lang-link">EN</a>
+        </div>
+        <img class="user-avatar" src="img/avatar.jpg" alt="Utilizador" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Menu principal">
+      <nav class="nav">
+        <a class="nav-link" href="./index.html">Início</a>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Geral</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./geral-processos.html">Processos</a></li>
+            <li><a class="nav-sublink" href="./geral-dados-pessoais.html">Dados pessoais</a></li>
+            <li><a class="nav-sublink" href="./geral-privacidade.html">Privacidade</a></li>
+            <li><a class="nav-sublink" href="./geral-ajuda.html">Ajuda</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Serviços</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./servicos-pagamentos.html">Pagamentos</a></li>
+            <li><a class="nav-sublink" href="./servicos-matriculas-inscricoes.html">Matrículas/Inscrições</a></li>
+            <li><a class="nav-sublink" href="./servicos-inscricao-turmas.html">Inscrição em turmas</a></li>
+            <li><a class="nav-sublink" href="./servicos-requerimentos.html">Requerimentos</a></li>
+            <li><a class="nav-sublink" href="./servicos-cartao-universitario.html">Cartão universitário</a></li>
+            <li><a class="nav-sublink" href="https://www.uma.pt/sobre/servico-apoio-estudantes/accao-social/?IDM=PT&ID0=1768240254&ID1=&ID2=500&ID3=be7838a166132ead94286c581bfa56ea">SASUMa — Bolsas</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Concursos</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./concursos-candidaturas.html">Candidaturas</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Avaliação</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./avaliacao-pautas.html">Pautas</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-reclamacao-nota.html">Reclamação de nota</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-inqueritos.html">Inquéritos</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-resultados-inqueritos.html">Resultados de inquéritos</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-inquerito-raides.html">Inquérito RAIDES</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Creditações</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./creditacoes-lista-processos.html">Lista de processos</a></li>
+            <li><a class="nav-sublink" href="./creditacoes-novo-processo.html">Novo processo</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Documentos</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./documentos-academicos.html">Académicos</a></li>
+            <li><a class="nav-sublink" href="./documentos-declaracoes.html">Declarações</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Aula</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./aula-marcar-presenca.html">Marcar presença</a></li>
+            <li><a class="nav-sublink" href="./aula-calendario.html">Calendário</a></li>
+            <li><a class="nav-sublink" href="./aula-sumarios.html">Sumários</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group" open>
+          <summary class="nav-summary">Disciplina</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./disciplina-ficha.html">Ficha</a></li>
+            <li><a class="nav-sublink is-active" href="./disciplina-programa.html">Programa</a></li>
+            <li><a class="nav-sublink" href="./disciplina-ficheiros.html">Ficheiros</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Curso</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./curso-ficha-curricular.html">Ficha curricular</a></li>
+            <li><a class="nav-sublink" href="./horario.html">Horários</a></li>
+            <li><a class="nav-sublink" href="./curso-historico-matriculas-inscricoes.html">Histórico de matrículas/inscrições</a></li>
+            <li><a class="nav-sublink" href="./curso-historico-disciplinas-aprovadas.html">Histórico de disciplinas aprovadas</a></li>
+            <li><a class="nav-sublink" href="./curso-transicao-bolonha.html">Transição para Bolonha</a></li>
+            <li><a class="nav-sublink" href="./curso-plano-conclusao.html">Plano de conclusão</a></li>
+            <li><a class="nav-sublink" href="./curso-quadro-prescricao.html">Quadro de prescrição</a></li>
+            <li><a class="nav-sublink" href="./curso-atividades-academicas.html">Atividades académicas do aluno</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Instituição</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./instituicao-estrutura-organica.html">Estrutura orgânica</a></li>
+          </ul>
+        </details>
+      </nav>
+    </aside>
+
+    <!-- Conteúdo -->
+    <main class="main" role="main">
+      <div class="page-head">
+        <div>
+          <div class="kicker">Disciplina</div>
+          <h1 class="page-title">Programa</h1>
+        </div>
+        <div class="page-actions">
+          <a class="btn btn-ghost" href="./disciplina-ficha.html">Ver ficha</a>
+          <a class="btn" href="./disciplina-ficheiros.html">Ficheiros</a>
+        </div>
+      </div>
+
+      <!-- Pesquisa -->
+      <section class="card">
+        <header class="card-header">
+          <h2 class="card-title">Pesquisa de Disciplinas</h2>
+          <div class="card-meta">Selecione o ano letivo e a disciplina.</div>
+        </header>
+        <div class="card-body">
+          <form class="form">
+            <div class="form-grid form-grid-3">
+              <label class="field">
+                <span class="label">Ano Letivo</span>
+                <select class="control">
+                  <option>2025/26</option>
+                  <option>2024/25</option>
+                  <option>2023/24</option>
+                </select>
+              </label>
+
+              <label class="field field-span-2">
+                <span class="label">Disciplina</span>
+                <select class="control">
+                  <option>Matemática_CTeSP_TPSI (S1)</option>
+                  <option>Programação (S1)</option>
+                  <option>Bases de Dados (S2)</option>
+                </select>
+              </label>
+
+              <div class="field field-actions">
+                <span class="label label-ghost">.</span>
+                <button class="btn" type="button">Pesquisar…</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Lista -->
+      <section class="card">
+        <header class="card-header">
+          <h2 class="card-title">Lista de Disciplinas</h2>
+          <div class="card-meta">Resultados para o ano letivo selecionado.</div>
+        </header>
+        <div class="card-body">
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>AL</th>
+                  <th>Disciplina</th>
+                  <th>Curso</th>
+                  <th>Especialidade</th>
+                  <th class="right">ALP</th>
+                  <th class="right">S</th>
+                  <th class="right">UC</th>
+                  <th class="right">CH</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2025/26</td>
+                  <td><a class="link-quiet" href="#">Matemática</a></td>
+                  <td>Tec Pro Sis Inf</td>
+                  <td>S/Ramos — Esp.</td>
+                  <td class="right">2020/21</td>
+                  <td class="right"><span class="badge">S1</span></td>
+                  <td class="right">5.50</td>
+                  <td class="right">140.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="helper">
+            <span class="muted">AL</span> — Ano letivo |
+            <span class="muted">ALP</span> — Ano letivo do plano |
+            <span class="muted">S</span> — Semestre |
+            <span class="muted">UC</span> — Unidades de crédito |
+            <span class="muted">CH</span> — Carga horária
+          </p>
+        </div>
+      </section>
+
+      <!-- Tabs -->
+      <section class="card">
+        <div class="tabs" role="tablist" aria-label="Secções da disciplina">
+          <button class="tab is-active" type="button" data-tab="objetivos">Objectivos / Avaliação</button>
+          <button class="tab" type="button" data-tab="bibliografia">Bibliografia</button>
+          <button class="tab" type="button" data-tab="programa">Programa</button>
+          <button class="tab" type="button" data-tab="outros">Outros Dados</button>
+          <button class="tab" type="button" data-tab="docente">Corpo Docente</button>
+          <button class="tab" type="button" data-tab="documentos">Documentos</button>
+        </div>
+
+        <div class="card-body">
+          <!-- Objectivos -->
+          <div class="tab-panel is-active" id="tab-objetivos" role="tabpanel">
+            <div class="grid grid-2">
+              <div class="panel">
+                <h3 class="panel-title">Objectivos</h3>
+                <p class="muted">Conteúdo de exemplo — substitui pelo texto real.</p>
+                <ul class="list">
+                  <li>Compreender fundamentos e métodos.</li>
+                  <li>Aplicar conceitos a problemas práticos.</li>
+                  <li>Desenvolver raciocínio lógico e rigor.</li>
+                </ul>
+              </div>
+              <div class="panel">
+                <h3 class="panel-title">Avaliação</h3>
+                <div class="table-wrap">
+                  <table class="table table-compact">
+                    <thead>
+                      <tr>
+                        <th>Elemento</th>
+                        <th class="right">Peso</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Teste 1</td><td class="right">40%</td></tr>
+                      <tr><td>Teste 2</td><td class="right">40%</td></tr>
+                      <tr><td>Trabalhos</td><td class="right">20%</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bibliografia -->
+          <div class="tab-panel" id="tab-bibliografia" role="tabpanel">
+            <div class="panel">
+              <h3 class="panel-title">Bibliografia</h3>
+              <div class="list-scroll">
+                <ol class="list">
+                  <li>Autor A — Título (Edição), Editora, Ano.</li>
+                  <li>Autor B — Título (Edição), Editora, Ano.</li>
+                  <li>Autor C — Título (Edição), Editora, Ano.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programa -->
+          <div class="tab-panel" id="tab-programa" role="tabpanel">
+            <div class="grid grid-2">
+              <div class="panel">
+                <h3 class="panel-title">Programa resumido</h3>
+                <textarea class="textarea" rows="12" readonly>
+(Exemplo)
+Introdução • Lógica • Teoria de conjuntos • Funções • Limites • Derivadas…
+                </textarea>
+              </div>
+
+              <div class="panel">
+                <h3 class="panel-title">Tradução para Inglês do Programa resumido</h3>
+                <textarea class="textarea" rows="12" readonly>
+(Example)
+Introduction • Logic • Set theory • Functions • Limits • Derivatives…
+                </textarea>
+              </div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="panel">
+              <h3 class="panel-title panel-title-center">Programa Detalhado</h3>
+
+              <div class="form program-filter">
+                <div class="form-grid form-grid-3">
+                  <label class="field field-span-2">
+                    <span class="label">Escolha o Tipo de Programa</span>
+                    <select class="control">
+                      <option>Programa (23 itens)</option>
+                      <option>Programa (resumido)</option>
+                      <option>Programa (detalhado)</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+
+              <div class="table-wrap table-scroll">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th style="width:90px">Item</th>
+                      <th>Tópico</th>
+                      <th>Tradução para Inglês do Tópico do Programa</th>
+                      <th class="right" style="width:160px">Horas de Contacto</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Introdução à Lógica bivalente e à Teoria dos conjuntos</td>
+                      <td>Introduction to bivalent logic and set theory</td>
+                      <td class="right">—</td>
+                    </tr>
+                    <tr>
+                      <td>1.1</td>
+                      <td>Proposições e conectivos</td>
+                      <td>Propositions and connectives</td>
+                      <td class="right">—</td>
+                    </tr>
+                    <tr>
+                      <td>1.2</td>
+                      <td>Quantificadores e argumentação</td>
+                      <td>Quantifiers and argumentation</td>
+                      <td class="right">—</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Outros Dados -->
+          <div class="tab-panel" id="tab-outros" role="tabpanel">
+            <div class="grid grid-2">
+              <div class="panel">
+                <h3 class="panel-title">Outros Dados</h3>
+                <div class="kv">
+                  <div class="kv-row"><div class="kv-k">Semestre</div><div class="kv-v"><span class="badge">S1</span></div></div>
+                  <div class="kv-row"><div class="kv-k">UC</div><div class="kv-v">5.50</div></div>
+                  <div class="kv-row"><div class="kv-k">CH</div><div class="kv-v">140.00</div></div>
+                </div>
+              </div>
+              <div class="panel">
+                <h3 class="panel-title">Observações</h3>
+                <p class="muted">Área para notas, regras ou informação complementar.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Corpo Docente -->
+          <div class="tab-panel" id="tab-docente" role="tabpanel">
+            <div class="panel">
+              <h3 class="panel-title">Corpo Docente</h3>
+              <div class="table-wrap">
+                <table class="table table-compact">
+                  <thead>
+                    <tr>
+                      <th>Docente</th>
+                      <th>Email</th>
+                      <th class="right">Função</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Nome do Docente</td>
+                      <td><a href="#" class="link-quiet">docente@uma.pt</a></td>
+                      <td class="right">Responsável</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Documentos -->
+          <div class="tab-panel" id="tab-documentos" role="tabpanel">
+            <div class="panel">
+              <h3 class="panel-title">Documentos</h3>
+              <div class="list-scroll">
+                <ul class="list">
+                  <li><a href="#" class="link-quiet">Plano da disciplina (PDF)</a></li>
+                  <li><a href="#" class="link-quiet">Regulamento (PDF)</a></li>
+                  <li><a href="#" class="link-quiet">Fichas (ZIP)</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="muted">© Universidade da Madeira — InfoAlunos</div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // Tabs (sem dependências)
+    (function(){
+      const tabs = Array.from(document.querySelectorAll(".tab"));
+      const panels = Array.from(document.querySelectorAll(".tab-panel"));
+      function activate(name){
+        tabs.forEach(b => b.classList.toggle("is-active", b.dataset.tab === name));
+        panels.forEach(p => p.classList.toggle("is-active", p.id === "tab-" + name));
+      }
+      tabs.forEach(b => b.addEventListener("click", () => activate(b.dataset.tab)));
+      activate("objetivos");
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* ./css/disciplina-ficheiros.css */
+/* Página 100% estática: tabs com CSS (sem JS) */
+
+.files-toolbar{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(15,23,42,.08);
+  background: #fff;
+  margin-bottom: 12px;
+}
+
+.files-toolbar-left{
+  display: grid;
+  gap: 6px;
+  flex: 1;
+  min-width: 240px;
+}
+
+.files-toolbar-right{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.control-input{
+  height: 36px;
+}
+
+/* Empty state */
+.empty-state{
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 10px;
+  align-items: start;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(10,132,193,.18);
+  background: rgba(10,132,193,.06);
+}
+
+.empty-icon{
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(10,132,193,.25);
+  background: rgba(255,255,255,.85);
+  display: grid;
+  place-items: center;
+  font-weight: 950;
+  color: rgba(8,106,154,1);
+  line-height: 1;
+}
+
+.empty-title{
+  font-weight: 950;
+  letter-spacing: -0.01em;
+}
+
+.empty-sub{
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* =============== */
+/* Tabs só com CSS */
+/* =============== */
+
+.tabs-state{
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Por defeito, esconde painéis; mostra conforme radio checked */
+.tabs-css .tab-panel{ display: none; }
+
+/* Quando "docentes" está ativo */
+#tab-docentes:checked ~ .card-body .tab-panel-docentes{ display: block; }
+
+/* Quando "aluno" está ativo */
+#tab-aluno:checked ~ .card-body .tab-panel-aluno{ display: block; }
+
+/* Estilo do label-tab quando ativo (replica o look do dashboard) */
+.tabs-css .tabs .tab{
+  user-select: none;
+}
+
+/* Ativo: docentes */
+#tab-docentes:checked ~ .tabs label[for="tab-docentes"]{
+  background: #fff;
+  border-color: var(--border);
+  border-bottom-color: #fff;
+  color: rgba(8,106,154,1);
+}
+
+/* Ativo: aluno */
+#tab-aluno:checked ~ .tabs label[for="tab-aluno"]{
+  background: #fff;
+  border-color: var(--border);
+  border-bottom-color: #fff;
+  color: rgba(8,106,154,1);
+}
+
+/* Ajuste: labels dentro do container .tabs (do dashboard) */
+.tabs-css .tabs{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 980px){
+  .files-toolbar{
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .files-toolbar-right{
+    justify-content: flex-end;
+  }
+}
