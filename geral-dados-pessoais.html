@@ -1,0 +1,300 @@
+<!-- geral-dados-pessoais.html -->
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InfoAlunos — Geral — Dados pessoais</title>
+
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/geral-dados-pessoais.css" />
+</head>
+
+<body class="page-dashboard page-geral-dados">
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="brand">
+        <img class="brand-logo" src="img/logo-uma.png" alt="Universidade da Madeira" />
+        <div class="brand-text">
+          <div class="brand-name">InfoAlunos</div>
+          <div class="brand-sub">Serviço de Informação dos Alunos</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topbar-center">
+      <div class="topbar-title">InfoAlunos — Serviço de Informação dos Alunos</div>
+      <div class="topbar-version">v3.1.4</div>
+    </div>
+
+    <div class="topbar-right">
+      <nav class="topbar-actions" aria-label="Ações rápidas">
+        <a class="chip" href="./correio.html">O meu Correio</a>
+        <a class="chip" href="./horario.html">O meu Horário</a>
+        <a class="chip" href="./servicos-matriculas-inscricoes.html">Matrículas/Inscrições</a>
+      </nav>
+
+      <div class="user">
+        <div class="lang">
+          <a href="#" class="lang-link">PT</a>
+          <span class="lang-sep">|</span>
+          <a href="#" class="lang-link">EN</a>
+        </div>
+        <img class="user-avatar" src="img/avatar.jpg" alt="Utilizador" />
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="Menu principal">
+      <nav class="nav">
+        <a class="nav-link" href="./index.html">Início</a>
+
+        <details class="nav-group" open>
+          <summary class="nav-summary">Geral</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./geral-processos.html">Processos</a></li>
+            <li><a class="nav-sublink is-active" href="./geral-dados-pessoais.html">Dados pessoais</a></li>
+            <li><a class="nav-sublink" href="./geral-privacidade.html">Privacidade</a></li>
+            <li><a class="nav-sublink" href="./geral-ajuda.html">Ajuda</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Serviços</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./servicos-pagamentos.html">Pagamentos</a></li>
+            <li><a class="nav-sublink" href="./servicos-matriculas-inscricoes.html">Matrículas/Inscrições</a></li>
+            <li><a class="nav-sublink" href="./servicos-inscricao-turmas.html">Inscrição em turmas</a></li>
+            <li><a class="nav-sublink" href="./servicos-requerimentos.html">Requerimentos</a></li>
+            <li><a class="nav-sublink" href="./servicos-cartao-universitario.html">Cartão universitário</a></li>
+            <li><a class="nav-sublink" href="./servicos-sasuma-bolsas.html">SASUMa — Bolsas</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Concursos</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./concursos-candidaturas.html">Candidaturas</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Avaliação</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./avaliacao.html">Avaliação (lista)</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-pautas.html">Pautas</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-reclamacao-nota.html">Reclamação de nota</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-inqueritos.html">Inquéritos</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-resultados-inqueritos.html">Resultados de inquéritos</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-inquerito-raides.html">Inquérito RAIDES</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Creditações</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./creditacoes-lista-processos.html">Lista de processos</a></li>
+            <li><a class="nav-sublink" href="./creditacoes-novo-processo.html">Novo processo</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Documentos</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./documentos-academicos.html">Académicos</a></li>
+            <li><a class="nav-sublink" href="./documentos-declaracoes.html">Declarações</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Aula</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./aula-marcar-presenca.html">Marcar presença</a></li>
+            <li><a class="nav-sublink" href="./aula-calendario.html">Calendário</a></li>
+            <li><a class="nav-sublink" href="./aula-sumarios.html">Sumários</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Disciplina</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./disciplina-ficha.html">Ficha</a></li>
+            <li><a class="nav-sublink" href="./disciplina-programa.html">Programa</a></li>
+            <li><a class="nav-sublink" href="./disciplina-ficheiros.html">Ficheiros</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Curso</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./curso-ficha-curricular.html">Ficha curricular</a></li>
+            <li><a class="nav-sublink" href="./horario.html">Horários</a></li>
+            <li><a class="nav-sublink" href="./curso-historico-matriculas-inscricoes.html">Histórico de matrículas/inscrições</a></li>
+            <li><a class="nav-sublink" href="./curso-historico-disciplinas-aprovadas.html">Histórico de disciplinas aprovadas</a></li>
+            <li><a class="nav-sublink" href="./curso-transicao-bolonha.html">Transição para Bolonha</a></li>
+            <li><a class="nav-sublink" href="./curso-plano-conclusao.html">Plano de conclusão</a></li>
+            <li><a class="nav-sublink" href="./curso-quadro-prescricao.html">Quadro de prescrição</a></li>
+            <li><a class="nav-sublink" href="./curso-atividades-academicas.html">Atividades académicas do aluno</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Instituição</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./instituicao-estrutura-organica.html">Estrutura orgânica</a></li>
+          </ul>
+        </details>
+      </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <section class="card dp-card">
+        <header class="dp-head">
+          <h1 class="dp-title">Nome e Informação Biográfica</h1>
+          <a class="dp-action" href="#">Alterar</a>
+        </header>
+
+        <div class="dp-grid">
+          <!-- Card principal (nome) -->
+          <section class="panel panel-bio" aria-label="Dados biográficos">
+            <div class="bio">
+              <img class="bio-avatar" src="img/avatar.jpg" alt="Fotografia do utilizador" />
+
+              <div class="bio-main">
+                <div class="bio-label">Nome Completo</div>
+                <div class="bio-name">Vítor Hugo Barros Camacho</div>
+
+                <dl class="kv">
+                  <div class="kv-row"><dt>Nome Abreviado</dt><dd>Vítor Hugo</dd></div>
+                  <div class="kv-row"><dt>Nomes Próprios</dt><dd>Vítor Hugo</dd></div>
+                  <div class="kv-row"><dt>Apelidos</dt><dd>Barros Camacho</dd></div>
+                  <div class="kv-row"><dt>Data de Nascimento</dt><dd>2006-06-27</dd></div>
+                  <div class="kv-row"><dt>Sexo</dt><dd>Masculino</dd></div>
+                  <div class="kv-row"><dt>Estado Civil</dt><dd>Solteiro</dd></div>
+                  <div class="kv-row"><dt>Naturalidade</dt><dd>Portugal (Região Autónoma da Madeira | Funchal | Santo António)</dd></div>
+                  <div class="kv-row"><dt>Nacionalidade</dt><dd>Portugal</dd></div>
+                  <div class="kv-row"><dt>Pai — Nome Completo</dt><dd>João Horácio Pereira Camacho</dd></div>
+                  <div class="kv-row"><dt>Mãe — Nome Completo</dt><dd>Ana Isabel Barros Abreu</dd></div>
+                </dl>
+
+                <div class="bio-foot">ALUNO Nº <strong>2139725</strong></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Coluna direita -->
+          <div class="right">
+            <section class="panel" aria-label="Documentos de Identificação">
+              <header class="panel-head">
+                <h2 class="panel-title">Documentos de Identificação</h2>
+                <a class="panel-action" href="#">Adicionar</a>
+              </header>
+
+              <div class="doc">
+                <div class="doc-head">
+                  <h3 class="doc-title">Número de Identificação Fiscal</h3>
+                  <a class="doc-action" href="#">Alterar</a>
+                </div>
+
+                <div class="doc-box">
+                  <div class="doc-row">
+                    <div class="doc-label">Número</div>
+                    <div class="doc-value">258048158</div>
+                  </div>
+                  <div class="doc-row">
+                    <div class="doc-label">País de Emissão</div>
+                    <div class="doc-value">Portugal</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="doc">
+                <div class="doc-head">
+                  <h3 class="doc-title">Número de Identificação Civil</h3>
+                  <a class="doc-action" href="#">Alterar</a>
+                </div>
+
+                <div class="doc-box">
+                  <div class="doc-row">
+                    <div class="doc-label">Número</div>
+                    <div class="doc-value">15230918 7ZW2</div>
+                  </div>
+                  <div class="doc-row">
+                    <div class="doc-label">País de Emissão</div>
+                    <div class="doc-value">Portugal</div>
+                  </div>
+                  <div class="doc-row">
+                    <div class="doc-label">Validade</div>
+                    <div class="doc-value">2026-04-28</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel" aria-label="Contactos">
+              <header class="panel-head">
+                <h2 class="panel-title">Contactos</h2>
+                <a class="panel-action" href="#">Alterar</a>
+              </header>
+
+              <dl class="kv kv-compact">
+                <div class="kv-row"><dt>Número de telefone</dt><dd>—</dd></div>
+                <div class="kv-row"><dt>Número de telemóvel</dt><dd>933469939</dd></div>
+                <div class="kv-row"><dt>Email Pessoal</dt><dd>vitorcamacho06@gmail.com</dd></div>
+                <div class="kv-row"><dt>Email Institucional</dt><dd>2139725@student.uma.pt</dd></div>
+              </dl>
+            </section>
+          </div>
+
+          <!-- Morada -->
+          <section class="panel panel-morada" aria-label="Morada">
+            <header class="panel-head">
+              <h2 class="panel-title">Morada</h2>
+              <a class="panel-action" href="#">Alterar</a>
+            </header>
+
+            <div class="morada">
+              <div class="morada-title">Morada de Correspondência</div>
+              <div class="morada-box">
+                <div class="morada-name">Vítor Hugo Barros Camacho</div>
+                <div>Conjunto Habitacional Rua quinta dos Cedros BºA Nº27 1ºR</div>
+                <div>9020 Funchal</div>
+                <div>Portugal</div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Footer (o novo que pediste) -->
+        <footer class="site-footer" role="contentinfo">
+          <div class="footer-inner">
+            <div class="footer-left">
+              <div class="footer-title">© Universidade da Madeira</div>
+              <div class="footer-sub">
+                Gabinete de Desenvolvimento de Aplicações Informáticas
+                <span class="dot">•</span> Colégio dos Jesuítas, 9000-081 Funchal
+                <span class="dot">•</span> Tel: +351 291 209400
+                <span class="dot">•</span> Fax: +351 291 209410
+              </div>
+              <div class="footer-links">
+                <a href="#" class="footer-link">Proteção de Dados</a>
+                <span class="sep">|</span>
+                <a href="#" class="footer-link">Termos de Utilização</a>
+              </div>
+            </div>
+
+            <div class="footer-right">
+              <div class="footer-meta">Processado em 0.12 segundos</div>
+              <div class="footer-meta">powered by <span class="footer-strong">Hydra</span></div>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

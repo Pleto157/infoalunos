@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InfoAlunos — Dashboard</title>
+
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+
+<body class="page-dashboard">
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="brand">
+        <img class="brand-logo" src="img/logo-uma.png" alt="Universidade da Madeira" />
+        <div class="brand-text">
+          <div class="brand-name">InfoAlunos</div>
+          <div class="brand-sub">Serviço de Informação dos Alunos</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topbar-center">
+      <div class="topbar-title">InfoAlunos — Serviço de Informação dos Alunos</div>
+      <div class="topbar-version">v3.1.4</div>
+    </div>
+
+    <div class="topbar-right">
+      <nav class="topbar-actions" aria-label="Ações rápidas">
+        <a class="chip" href="./correio.html">O meu Correio</a>
+        <a class="chip" href="./horario.html">O meu Horário</a>
+        <a class="chip" href="./servicos-matriculas-inscricoes.html">Matrículas/Inscrições</a>
+      </nav>
+
+      <div class="user">
+        <div class="lang">
+          <a href="#" class="lang-link">PT</a>
+          <span class="lang-sep">|</span>
+          <a href="#" class="lang-link">EN</a>
+        </div>
+        <img class="user-avatar" src="img/avatar.jpg" alt="Utilizador" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+    <!-- Sidebar (com caminhos ./nomedoficheiro) -->
+<aside class="sidebar" aria-label="Menu principal">
+  <nav class="nav">
+    <a class="nav-link" href="./index.html">Início</a>
+
+    <details class="nav-group">
+      <summary class="nav-summary">Geral</summary>
+      <ul class="nav-sub">
+        <li><a class="nav-sublink" href="./geral-processos.html">Processos</a></li>
+        <li><a class="nav-sublink" href="./geral-dados-pessoais.html">Dados pessoais</a></li>
+        <li><a class="nav-sublink" href="./geral-privacidade.html">Privacidade</a></li>
+        <li><a class="nav-sublink" href="./geral-ajuda.html">Ajuda</a></li>
+      </ul>
+    </details>
+
+    <details class="nav-group">
+      <summary class="nav-summary">Serviços</summary>
+      <ul class="nav-sub">
+        <li><a class="nav-sublink" href="./servicos-pagamentos.html">Pagamentos</a></li>
+        <li><a class="nav-sublink" href="./servicos-matriculas-inscricoes.html">Matrículas/Inscrições</a></li>
+        <li><a class="nav-sublink" href="./servicos-inscricao-turmas.html">Inscrição em turmas</a></li>
+        <li><a class="nav-sublink" href="./servicos-requerimentos.html">Requerimentos</a></li>
+        <li><a class="nav-sublink" href="./servicos-cartao-universitario.html">Cartão universitário</a></li>
+        <li><a class="nav-sublink" href="https://www.uma.pt/sobre/servico-apoio-estudantes/accao-social/?IDM=PT&ID0=1768240254&ID1=&ID2=500&ID3=be7838a166132ead94286c581bfa56ea">SASUMa — Bolsas</a></li>
+      </ul>
+    </details>
+
+    <details class="nav-group">
+      <summary class="nav-summary">Concursos</summary>
+      <ul class="nav-sub">
+        <li><a class="nav-sublink" href="./concursos-candidaturas.html">Candidaturas</a></li>
+      </ul>
+    </details>
+
+    <details class="nav-group">
+      <summary class="nav-summary">Avaliação</summary>
+      <ul class="nav-sub">
+        <li><a class="nav-sublink" href="./avaliacao-pautas.html">Pautas</a></li>
+        <li><a class="nav-sublink" href="./avaliacao-reclamacao-nota.html">Reclamação de nota</a></li>
+        <li><a class="nav-sublink" href="./avaliacao-inqueritos.html">Inquéritos</a></li>
+        <li><a class="nav-sublink" href="./avaliacao-resultados-inqueritos.html">Resultados de inquéritos</a></li>
+        <li><a class="nav-sublink" href="./avaliacao-inquerito-raides.html">Inquérito RAIDES</a></li>
+      </ul>
+    </details>
+
+    <details class="nav-group">
+      <summary class="nav-summary">Creditações</summary>
+      <ul class="nav-sub">
+        <li><a class="nav-sublink" href="./creditacoes-lista-processos.html">Lista de processos</a></li>
+        <li><a class="nav-sublink" href="./creditacoes-novo-processo.html">Novo processo</a></li>
+      </ul>
+    </details>
+
+    <details class="nav-group">
+      <summary class="nav-summary">Documentos</summary>
+      <ul class="nav-sub">
+        <li><a class="nav-sublink" href="./documentos-academicos.html">Académicos</a></li>
+        <li><a class="nav-sublink" href="./documentos-declaracoes.html">Declarações</a></li>
+      </ul>
+    </details>
+
+    <details class="nav-group">
+      <summary class="nav-summary">Aula</summary>
+      <ul class="nav-sub">
+        <li><a class="nav-sublink" href="./aula-marcar-presenca.html">Marcar presença</a></li>
+        <li><a class="nav-sublink" href="./aula-calendario.html">Calendário</a></li>
+        <li><a class="nav-sublink" href="./aula-sumarios.html">Sumários</a></li>
+      </ul>
+    </details>
+
+    <details class="nav-group">
+      <summary class="nav-summary">Disciplina</summary>
+      <ul class="nav-sub">
+        <li><a class="nav-sublink" href="./disciplina-ficha.html">Ficha</a></li>
+        <li><a class="nav-sublink" href="./disciplina-programa.html">Programa</a></li>
+        <li><a class="nav-sublink" href="./disciplina-ficheiros.html">Ficheiros</a></li>
+      </ul>
+    </details>
+
+    <details class="nav-group">
+      <summary class="nav-summary">Curso</summary>
+      <ul class="nav-sub">
+        <li><a class="nav-sublink" href="./curso-ficha-curricular.html">Ficha curricular</a></li>
+        <li><a class="nav-sublink" href="./horario.html">Horários</a></li>
+        <li><a class="nav-sublink" href="./curso-historico-matriculas-inscricoes.html">Histórico de matrículas/inscrições</a></li>
+        <li><a class="nav-sublink" href="./curso-historico-disciplinas-aprovadas.html">Histórico de disciplinas aprovadas</a></li>
+        <li><a class="nav-sublink" href="./curso-transicao-bolonha.html">Transição para Bolonha</a></li>
+        <li><a class="nav-sublink" href="./curso-plano-conclusao.html">Plano de conclusão</a></li>
+        <li><a class="nav-sublink" href="./curso-quadro-prescricao.html">Quadro de prescrição</a></li>
+        <li><a class="nav-sublink" href="./curso-atividades-academicas.html">Atividades académicas do aluno</a></li>
+      </ul>
+    </details>
+
+    <details class="nav-group">
+      <summary class="nav-summary">Instituição</summary>
+      <ul class="nav-sub">
+        <li><a class="nav-sublink" href="./instituicao-estrutura-organica.html">Estrutura orgânica</a></li>
+      </ul>
+    </details>
+  </nav>
+</aside>
+
+
+
+    <!-- Main -->
+    <main class="main">
+      <div class="grid">
+        <!-- Card 1 -->
+        <section class="card">
+          <header class="card-header">
+            <h2 class="card-title">Últimas Pautas</h2>
+          </header>
+
+          <div class="card-body">
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Data</th>
+                    <th>Unidade Curricular</th>
+                    <th>Avaliação</th>
+                    <th>Class.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2026-01-02</td>
+                    <td><a href="#">Técnicas de Expressão do Português</a></td>
+                    <td>Época Normal</td>
+                    <td>NAv</td>
+                  </tr>
+                  <tr>
+                    <td>2025-12-14</td>
+                    <td><a href="#">Introdução à Programação</a></td>
+                    <td>Recurso</td>
+                    <td>14</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Card 2 -->
+        <section class="card">
+          <header class="card-header">
+            <h2 class="card-title">Pagamentos por Liquidar</h2>
+            <div class="card-meta">Entidade Multibanco: <strong>20697</strong></div>
+          </header>
+
+          <div class="card-body">
+            <div class="table-wrap table-scroll" aria-label="Lista de pagamentos">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Limite</th>
+                    <th>Descrição</th>
+                    <th>Ref MB</th>
+                    <th class="right">Valor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2026-01-31</td>
+                    <td>5ª Prestação de Propinas</td>
+                    <td>213972505</td>
+                    <td class="right">69,70 EUR</td>
+                  </tr>
+                  <tr>
+                    <td>2026-02-28</td>
+                    <td>6ª Prestação de Propinas</td>
+                    <td>213972506</td>
+                    <td class="right">69,70 EUR</td>
+                  </tr>
+                  <tr>
+                    <td>2026-03-31</td>
+                    <td>7ª Prestação de Propinas</td>
+                    <td>213972507</td>
+                    <td class="right">69,70 EUR</td>
+                  </tr>
+                  <tr>
+                    <td>2025-10-11</td>
+                    <td>Coima - Até 15 dias seguidos após o termo do prazo</td>
+                    <td>213972513</td>
+                    <td class="right">15,00 EUR</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Card largo -->
+        <section class="card card-span-2">
+          <header class="card-header">
+            <h2 class="card-title">Lista de Processos do Aluno — Unidade de Assuntos Académicos</h2>
+          </header>
+
+          <div class="card-body">
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Entrada</th>
+                    <th>Processo</th>
+                    <th>Saída</th>
+                    <th>Despacho</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2025-10-09</td>
+                    <td>Reclamação</td>
+                    <td>2025-10-09</td>
+                    <td><span class="badge">Em análise</span></td>
+                    <td class="right"><a class="link-quiet" href="#">+ info</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Card vazio (para bater o layout do print) -->
+        <section class="card">
+          <header class="card-header">
+            <h2 class="card-title">Resumo</h2>
+          </header>
+          <div class="card-body muted">
+            Espaço para widgets/indicadores (opcional).
+          </div>
+        </section>
+
+        <!-- Avisos -->
+        <section class="card">
+          <header class="card-header">
+            <h2 class="card-title">Avisos — Unidade de Assuntos Académicos</h2>
+            <div class="card-meta">(Max: 50)</div>
+          </header>
+
+          <div class="card-body">
+            <div class="list-scroll">
+              <ul class="list">
+                <li><a href="#">Aviso 2/UAA/26 — Alteração de inscrição — 2º semestre</a></li>
+                <li><a href="#">Aviso 13/UAA/25 — Inscrição em Melhoria de nota</a></li>
+                <li><a href="#">Aviso 17/UAA/25 — Candidaturas à Microcredencial</a></li>
+                <li><a href="#">Aviso 03/UAA/25 — Calendário de entrevistas</a></li>
+                <li><a href="#">Aviso 23/UAA/25 — Publicação de listas definitivas</a></li>
+                <li><a href="#">Aviso 31/UAA/25 — Procedimentos administrativos</a></li>
+                <li><a href="#">Aviso 39/UAA/25 — Informações gerais</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <span class="muted">© InfoAlunos</span>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

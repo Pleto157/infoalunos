@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InfoAlunos — Login</title>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+
+<body class="page-login">
+  <main class="login">
+    <section class="login-card" aria-label="Área de login">
+      <header class="login-header">
+        <!-- Troca pelo teu logo real -->
+        <div class="brand">
+          <img class="brand-logo" src="img/logo-uma.png" alt="Universidade da Madeira" />
+        </div>
+
+        <h1 class="login-title">infoalunos.uma.pt</h1>
+        <p class="login-subtitle">Acesso do aluno</p>
+      </header>
+
+      <div class="login-body">
+        <form class="login-form" action="#" method="post" autocomplete="on">
+          <label class="field">
+            <span class="field-label">Nº de Aluno</span>
+            <input
+              class="field-input"
+              type="text"
+              name="numero_aluno"
+              placeholder="Ex.: 123456"
+              inputmode="numeric"
+              autocomplete="username"
+              required
+            />
+          </label>
+
+          <label class="field">
+            <span class="field-label">Password</span>
+            <input
+              class="field-input"
+              type="password"
+              name="password"
+              placeholder="A tua password"
+              autocomplete="current-password"
+              required
+            />
+          </label>
+
+          <a class="btn btn-primary" href="./index.html">Entrar</a>
+
+          <div class="login-links">
+            <a class="link" href="#">Recuperar password</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

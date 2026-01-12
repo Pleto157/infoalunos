@@ -1,0 +1,336 @@
+<!-- servicos-pagamentos.html -->
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InfoAlunos — Serviços — Pagamentos</title>
+
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/servicos-pagamentos.css" />
+</head>
+
+<body class="page-dashboard page-servicos-pagamentos">
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="brand">
+        <img class="brand-logo" src="img/logo-uma.png" alt="Universidade da Madeira" />
+        <div class="brand-text">
+          <div class="brand-name">InfoAlunos</div>
+          <div class="brand-sub">Serviço de Informação dos Alunos</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topbar-center">
+      <div class="topbar-title">InfoAlunos — Serviço de Informação dos Alunos</div>
+      <div class="topbar-version">v3.1.4</div>
+    </div>
+
+    <div class="topbar-right">
+      <nav class="topbar-actions" aria-label="Ações rápidas">
+        <a class="chip" href="./correio.html">O meu Correio</a>
+        <a class="chip" href="./horario.html">O meu Horário</a>
+        <a class="chip" href="./servicos-matriculas-inscricoes.html">Matrículas/Inscrições</a>
+      </nav>
+
+      <div class="user">
+        <div class="lang">
+          <a href="#" class="lang-link">PT</a>
+          <span class="lang-sep">|</span>
+          <a href="#" class="lang-link">EN</a>
+        </div>
+        <img class="user-avatar" src="img/avatar.jpg" alt="Utilizador" />
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="Menu principal">
+      <nav class="nav">
+        <a class="nav-link" href="./index.html">Início</a>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Geral</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./geral-processos.html">Processos</a></li>
+            <li><a class="nav-sublink" href="./geral-dados-pessoais.html">Dados pessoais</a></li>
+            <li><a class="nav-sublink" href="./geral-privacidade.html">Privacidade</a></li>
+            <li><a class="nav-sublink" href="./geral-ajuda.html">Ajuda</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group" open>
+          <summary class="nav-summary">Serviços</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink is-active" href="./servicos-pagamentos.html">Pagamentos</a></li>
+            <li><a class="nav-sublink" href="./servicos-matriculas-inscricoes.html">Matrículas/Inscrições</a></li>
+            <li><a class="nav-sublink" href="./servicos-inscricao-turmas.html">Inscrição em turmas</a></li>
+            <li><a class="nav-sublink" href="./servicos-requerimentos.html">Requerimentos</a></li>
+            <li><a class="nav-sublink" href="./servicos-cartao-universitario.html">Cartão universitário</a></li>
+            <li><a class="nav-sublink" href="./servicos-sasuma-bolsas.html">SASUMa — Bolsas</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Concursos</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./concursos-candidaturas.html">Candidaturas</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Avaliação</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./avaliacao.html">Avaliação (lista)</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-pautas.html">Pautas</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-reclamacao-nota.html">Reclamação de nota</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-inqueritos.html">Inquéritos</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-resultados-inqueritos.html">Resultados de inquéritos</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-inquerito-raides.html">Inquérito RAIDES</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Creditações</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./creditacoes-lista-processos.html">Lista de processos</a></li>
+            <li><a class="nav-sublink" href="./creditacoes-novo-processo.html">Novo processo</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Documentos</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./documentos-academicos.html">Académicos</a></li>
+            <li><a class="nav-sublink" href="./documentos-declaracoes.html">Declarações</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Aula</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./aula-marcar-presenca.html">Marcar presença</a></li>
+            <li><a class="nav-sublink" href="./aula-calendario.html">Calendário</a></li>
+            <li><a class="nav-sublink" href="./aula-sumarios.html">Sumários</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Disciplina</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./disciplina-ficha.html">Ficha</a></li>
+            <li><a class="nav-sublink" href="./disciplina-programa.html">Programa</a></li>
+            <li><a class="nav-sublink" href="./disciplina-ficheiros.html">Ficheiros</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Curso</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./curso-ficha-curricular.html">Ficha curricular</a></li>
+            <li><a class="nav-sublink" href="./horario.html">Horários</a></li>
+            <li><a class="nav-sublink" href="./curso-historico-matriculas-inscricoes.html">Histórico de matrículas/inscrições</a></li>
+            <li><a class="nav-sublink" href="./curso-historico-disciplinas-aprovadas.html">Histórico de disciplinas aprovadas</a></li>
+            <li><a class="nav-sublink" href="./curso-transicao-bolonha.html">Transição para Bolonha</a></li>
+            <li><a class="nav-sublink" href="./curso-plano-conclusao.html">Plano de conclusão</a></li>
+            <li><a class="nav-sublink" href="./curso-quadro-prescricao.html">Quadro de prescrição</a></li>
+            <li><a class="nav-sublink" href="./curso-atividades-academicas.html">Atividades académicas do aluno</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Instituição</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./instituicao-estrutura-organica.html">Estrutura orgânica</a></li>
+          </ul>
+        </details>
+      </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <section class="card pay-card">
+        <div class="pay-top">
+          <section class="panel filter" aria-label="Filtrar Pagamentos">
+            <header class="panel-head">
+              <h1 class="panel-title">Filtrar Pagamentos</h1>
+            </header>
+
+            <form class="filter-form" action="#" method="get">
+              <label class="field">
+                <span class="field-label">Ano Lectivo</span>
+                <select class="field-input">
+                  <option>2025/26</option>
+                  <option>2024/25</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span class="field-label">Situação do Pagamento</span>
+                <select class="field-input">
+                  <option>Por Pagar</option>
+                  <option>Pago</option>
+                  <option>Em atraso</option>
+                </select>
+              </label>
+
+              <button class="btn btn-primary" type="submit">Pesquisar</button>
+            </form>
+          </section>
+
+          <section class="panel total" aria-label="Total em Dívida">
+            <div class="total-label">Total em Dívida</div>
+            <div class="total-value">433.20 <span class="eur">EUR</span></div>
+          </section>
+        </div>
+
+        <section class="panel table" aria-label="Tabela de pagamentos">
+          <header class="panel-head">
+            <h2 class="panel-title">Pagamentos</h2>
+          </header>
+
+          <div class="table-wrap" role="region" aria-label="Tabela rolável">
+            <table class="pay-table">
+              <thead>
+                <tr>
+                  <th>AL</th>
+                  <th>B</th>
+                  <th>Refª MB</th>
+                  <th>Serviço</th>
+                  <th>Obs</th>
+                  <th>Data Emissão</th>
+                  <th>Data Lim.</th>
+                  <th>Data Pag.</th>
+                  <th class="num">Valor</th>
+                  <th class="center">Pagar c/ Cartão</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2025/26</td><td>S</td><td>213972505</td>
+                  <td>5ª Prestação de Propinas de CET's</td>
+                  <td></td><td>2025-09-29</td><td>2026-01-31</td><td></td>
+                  <td class="num">69.70 EUR</td>
+                  <td class="center"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                  <td>2025/26</td><td>S</td><td>213972506</td>
+                  <td>6ª Prestação de Propinas de CET's</td>
+                  <td></td><td>2025-09-29</td><td>2026-02-28</td><td></td>
+                  <td class="num">69.70 EUR</td>
+                  <td class="center"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                  <td>2025/26</td><td>S</td><td>213972507</td>
+                  <td>7ª Prestação de Propinas de CET's</td>
+                  <td></td><td>2025-09-29</td><td>2026-03-31</td><td></td>
+                  <td class="num">69.70 EUR</td>
+                  <td class="center"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                  <td>2025/26</td><td>S</td><td>213972508</td>
+                  <td>8ª Prestação de Propinas de CET's</td>
+                  <td></td><td>2025-09-29</td><td>2026-04-30</td><td></td>
+                  <td class="num">69.70 EUR</td>
+                  <td class="center"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                  <td>2025/26</td><td>S</td><td>213972509</td>
+                  <td>9ª Prestação de Propinas de CET's</td>
+                  <td></td><td>2025-09-29</td><td>2026-05-31</td><td></td>
+                  <td class="num">69.70 EUR</td>
+                  <td class="center"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                  <td>2025/26</td><td>S</td><td>213972510</td>
+                  <td>10ª Prestação de Propinas de CET's</td>
+                  <td></td><td>2025-09-29</td><td>2026-06-30</td><td></td>
+                  <td class="num">69.70 EUR</td>
+                  <td class="center"><input type="checkbox" /></td>
+                </tr>
+                <tr class="is-danger">
+                  <td>2025/26</td><td>S</td><td>213972513</td>
+                  <td>Coima — Até 15 dias seguidos após o termo do prazo</td>
+                  <td></td><td>2025-09-29</td><td>2025-10-11</td><td>-</td>
+                  <td class="num">15.00 EUR</td>
+                  <td class="center"><input type="checkbox" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <div class="pay-bottom">
+          <section class="panel option">
+            <header class="panel-head">
+              <h2 class="panel-title">Opção 1 — Multibanco</h2>
+            </header>
+
+            <div class="option-body">
+              <div class="option-badge">MB</div>
+              <div class="option-text">
+                <p><strong>Pagamento via Multibanco / Homebanking</strong></p>
+                <ul>
+                  <li>Entidade: <strong>20697</strong></li>
+                  <li>Utilize a <strong>Refª MB</strong> listada acima.</li>
+                  <li>Processamento: <strong>Não imediato</strong>.</li>
+                </ul>
+                <p class="muted">
+                  Se for ultrapassada a data limite, poderão ser aplicados juros de mora à taxa legal em vigor.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel option">
+            <header class="panel-head">
+              <h2 class="panel-title">Opção 2 — Cartão de Crédito</h2>
+            </header>
+
+            <div class="option-body">
+              <div class="option-badge badge-card">VISA</div>
+              <div class="option-text">
+                <p><strong>Pagamento via cartão</strong></p>
+                <ul>
+                  <li>Selecione linhas na coluna <em>“Pagar c/ Cartão”</em>.</li>
+                  <li>Depois clique em <strong>“Iniciar Pagamento”</strong>.</li>
+                  <li>Processamento: <strong>Imediato</strong>.</li>
+                </ul>
+                <button class="btn btn-secondary" type="button">Iniciar Pagamento</button>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer" role="contentinfo">
+          <div class="footer-inner">
+            <div class="footer-left">
+              <div class="footer-title">© Universidade da Madeira</div>
+              <div class="footer-sub">
+                Gabinete de Desenvolvimento de Aplicações Informáticas
+                <span class="dot">•</span> Colégio dos Jesuítas, 9000-081 Funchal
+                <span class="dot">•</span> Tel: +351 291 209400
+                <span class="dot">•</span> Fax: +351 291 209410
+              </div>
+              <div class="footer-links">
+                <a href="#" class="footer-link">Proteção de Dados</a>
+                <span class="sep">|</span>
+                <a href="#" class="footer-link">Termos de Utilização</a>
+              </div>
+            </div>
+
+            <div class="footer-right">
+              <div class="footer-meta">Processado em 0.4 segundos</div>
+              <div class="footer-meta">powered by <span class="footer-strong">Hydra</span></div>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

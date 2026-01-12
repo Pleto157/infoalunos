@@ -1,0 +1,267 @@
+<!-- horario.html -->
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InfoAlunos — O meu Horário</title>
+
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/horario.css" />
+</head>
+
+<body class="page-dashboard page-horario">
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="brand">
+        <img class="brand-logo" src="img/logo-uma.png" alt="Universidade da Madeira" />
+        <div class="brand-text">
+          <div class="brand-name">InfoAlunos</div>
+          <div class="brand-sub">Serviço de Informação dos Alunos</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topbar-center">
+      <div class="topbar-title">InfoAlunos — Serviço de Informação dos Alunos</div>
+      <div class="topbar-version">v3.1.4</div>
+    </div>
+
+    <div class="topbar-right">
+      <nav class="topbar-actions" aria-label="Ações rápidas">
+        <a class="chip" href="correio.html">O meu Correio</a>
+        <a class="chip" href="horario.html">O meu Horário</a>
+        <a class="chip" href="./servicos-matriculas-inscricoes.html">Matrículas/Inscrições</a>
+      </nav>
+
+      <div class="user">
+        <div class="lang">
+          <a href="#" class="lang-link">PT</a>
+          <span class="lang-sep">|</span>
+          <a href="#" class="lang-link">EN</a>
+        </div>
+        <img class="user-avatar" src="img/avatar.jpg" alt="Utilizador" />
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- SIDEBAR NOVA (a mesma do index, com <details>) -->
+    <aside class="sidebar" aria-label="Menu principal">
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Início</a>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Geral</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="#">Processos</a></li>
+            <li><a class="nav-sublink" href="#">Dados pessoais</a></li>
+            <li><a class="nav-sublink" href="#">Privacidade</a></li>
+            <li><a class="nav-sublink" href="#">Ajuda</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Serviços</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="#">Pagamentos</a></li>
+            <li><a class="nav-sublink" href="#">Matrículas/Inscrições</a></li>
+            <li><a class="nav-sublink" href="#">Inscrição em turmas</a></li>
+            <li><a class="nav-sublink" href="#">Requerimentos</a></li>
+            <li><a class="nav-sublink" href="#">Cartão universitário</a></li>
+            <li><a class="nav-sublink" href="#">SASUMa — Bolsas</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Concursos</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="#">Candidaturas</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Avaliação</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="#">Pautas</a></li>
+            <li><a class="nav-sublink" href="#">Reclamação de nota</a></li>
+            <li><a class="nav-sublink" href="#">Inquéritos</a></li>
+            <li><a class="nav-sublink" href="#">Resultados de inquéritos</a></li>
+            <li><a class="nav-sublink" href="#">Inquérito RAIDES</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Creditações</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="#">Lista de processos</a></li>
+            <li><a class="nav-sublink" href="#">Novo processo</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Documentos</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="#">Académicos</a></li>
+            <li><a class="nav-sublink" href="#">Declarações</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Aula</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="#">Marcar presença</a></li>
+            <li><a class="nav-sublink" href="#">Calendário</a></li>
+            <li><a class="nav-sublink" href="#">Sumários</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Disciplina</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="#">Ficha</a></li>
+            <li><a class="nav-sublink" href="#">Programa</a></li>
+            <li><a class="nav-sublink" href="#">Ficheiros</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group" open>
+          <summary class="nav-summary">Curso</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="#">Ficha curricular</a></li>
+            <li><a class="nav-sublink" href="#">Horários</a></li>
+            <li><a class="nav-sublink" href="#">Histórico de matrículas/inscrições</a></li>
+            <li><a class="nav-sublink" href="#">Histórico de disciplinas aprovadas</a></li>
+            <li><a class="nav-sublink" href="#">Transição para Bolonha</a></li>
+            <li><a class="nav-sublink" href="#">Plano de conclusão</a></li>
+            <li><a class="nav-sublink" href="#">Quadro de prescrição</a></li>
+            <li><a class="nav-sublink" href="#">Atividades académicas do aluno</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Instituição</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="#">Estrutura orgânica</a></li>
+          </ul>
+        </details>
+      </nav>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main class="main">
+      <section class="card horario-card">
+        <header class="cal-top">
+          <div class="cal-left">
+            <a class="cal-btn" href="#">Hoje</a>
+
+            <div class="cal-nav" aria-label="Navegação">
+              <a class="icon-btn" href="#" aria-label="Anterior">‹</a>
+              <a class="icon-btn" href="#" aria-label="Seguinte">›</a>
+            </div>
+
+            <div class="cal-range">
+              <strong>12 jan. - 18 jan. 2026</strong>
+              <span class="chev">▾</span>
+            </div>
+          </div>
+
+          <div class="cal-right">
+            <div class="segmented" role="group" aria-label="Filtro">
+              <a class="seg is-active" href="#">Aulas</a>
+              <a class="seg" href="./avaliacao.html">Avaliação</a>
+            </div>
+
+            <div class="cal-icons" aria-label="Ações">
+              <a class="icon-btn" href="#" aria-label="Calendário">📅</a>
+              <a class="icon-btn" href="#" aria-label="Imprimir">🖨️</a>
+            </div>
+          </div>
+        </header>
+
+        <div class="cal-wrap">
+          <!-- Grid: 1 coluna horas + 5 colunas dias -->
+          <div class="calendar">
+            <!-- header row -->
+            <div class="corner"></div>
+            <div class="day-head"><span class="day-num is-today">12</span><span class="day-name">SEGUNDA-FEIRA</span></div>
+            <div class="day-head"><span class="day-num">13</span><span class="day-name">TERÇA-FEIRA</span></div>
+            <div class="day-head"><span class="day-num">14</span><span class="day-name">QUARTA-FEIRA</span></div>
+            <div class="day-head"><span class="day-num">15</span><span class="day-name">QUINTA-FEIRA</span></div>
+            <div class="day-head"><span class="day-num">16</span><span class="day-name">SEXTA-FEIRA</span></div>
+
+            <!-- time labels (07:30 -> 15:00, de 30 em 30) -->
+            <div class="time">07:30</div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+            <div class="time">08:00</div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+            <div class="time">08:30</div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+            <div class="time">09:00</div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+            <div class="time">09:30</div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+            <div class="time">10:00</div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+            <div class="time">10:30</div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+            <div class="time">11:00</div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+            <div class="time">11:30</div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+            <div class="time">12:00</div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+            <div class="time">12:30</div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+            <div class="time">13:00</div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+            <div class="time">13:30</div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+            <div class="time">14:00</div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+            <div class="time">14:30</div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+            <div class="time">15:00</div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div>
+
+            <!-- EVENTOS (posicionados por grid: col=dia, row=hora) -->
+            <!-- Sexta (col 6), 08:00-09:00 (row 3 -> 5) -->
+            <article class="event ev-red" style="grid-column: 6; grid-row: 3 / 5;">
+              <div class="ev-time">08:00–09:00</div>
+              <div class="ev-title">Introdução à Programação</div>
+              <div class="ev-meta">Sala 31 • Piso 2</div>
+            </article>
+
+            <!-- Sexta, 09:00-12:00 (row 5 -> 11) -->
+            <article class="event ev-salmon" style="grid-column: 6; grid-row: 5 / 11;">
+              <div class="ev-time">09:00–12:00</div>
+              <div class="ev-title">Introdução à Programação</div>
+              <div class="ev-meta">[H] Sala 31 • Piso 2</div>
+            </article>
+
+            <!-- Quinta (col 5), 09:00-11:00 (row 5 -> 9) -->
+            <article class="event ev-blue" style="grid-column: 5; grid-row: 5 / 9;">
+              <div class="ev-time">09:00–11:00</div>
+              <div class="ev-title">Sistemas Operativos e Redes</div>
+              <div class="ev-meta">Centro de Simulação • Piso 0</div>
+            </article>
+
+            <!-- Quarta (col 4), 11:00-13:00 (row 9 -> 13) -->
+            <article class="event ev-purple" style="grid-column: 4; grid-row: 9 / 13;">
+              <div class="ev-time">11:00–13:00</div>
+              <div class="ev-title">Técnicas de Expressão do Português</div>
+              <div class="ev-meta">Sala 14 • Piso 1</div>
+            </article>
+
+            <!-- Quarta, 14:00-16:00 (row 15 -> 19) -->
+            <article class="event ev-blue" style="grid-column: 4; grid-row: 15 / 19;">
+              <div class="ev-time">14:00–16:00</div>
+              <div class="ev-title">Sistemas Operativos e Redes</div>
+              <div class="ev-meta">C_TeSP_TPSI</div>
+            </article>
+
+            <!-- Quinta, 14:00-16:00 -->
+            <article class="event ev-teal" style="grid-column: 5; grid-row: 15 / 19;">
+              <div class="ev-time">14:00–16:00</div>
+              <div class="ev-title">Design Hipermédia</div>
+              <div class="ev-meta">C_TeSP_TPSI</div>
+            </article>
+
+            <!-- Sexta, 14:00-18:00 (row 15 -> 23) -->
+            <article class="event ev-indigo" style="grid-column: 6; grid-row: 15 / 23;">
+              <div class="ev-time">14:00–18:00</div>
+              <div class="ev-title">Técnicas de Expressão do Português</div>
+              <div class="ev-meta">C_TeSP_TPSI</div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

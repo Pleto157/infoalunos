@@ -1,0 +1,275 @@
+/* css/horario.css
+   Feito especificamente para o teu horario.html (calendar + toolbar)
+   Corrige o problema das horas “a irem parar ao meio” ao FORÇAR:
+   - .time sempre na coluna 1
+   - .slot sempre nas colunas 2..6
+   e mantém visual clean/moderno.
+*/
+
+/* Card do horário */
+.page-horario .horario-card{
+  padding: 0;
+}
+
+/* Top controls */
+.cal-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, #ffffff, rgba(246,248,251,.65));
+}
+
+.cal-left, .cal-right{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cal-btn{
+  display: inline-flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(10,132,193,.35);
+  background: #fff;
+  font-weight: 900;
+  text-decoration: none;
+}
+.cal-btn:hover{
+  text-decoration: none;
+  box-shadow: 0 0 0 4px var(--focus);
+}
+
+.icon-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 38px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+  font-weight: 900;
+  text-decoration: none;
+}
+.icon-btn:hover{
+  text-decoration: none;
+  border-color: rgba(10,132,193,.35);
+  box-shadow: 0 0 0 4px var(--focus);
+}
+
+.cal-nav{ display: flex; gap: 8px; }
+
+.cal-range{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  height: 34px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+  font-weight: 900;
+}
+.cal-range .chev{ opacity: .65; }
+
+.segmented{
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.seg{
+  display: inline-flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 16px;
+  font-weight: 900;
+  text-decoration: none;
+  color: rgba(15,23,42,.78);
+}
+.seg:hover{ text-decoration: none; }
+.seg.is-active{
+  background: linear-gradient(180deg, var(--brand), var(--brand-2));
+  color: #fff;
+}
+
+.cal-icons{ display: flex; gap: 8px; }
+
+.cal-wrap{
+  padding: 14px 16px 16px;
+}
+
+/* =========================
+   CALENDAR GRID (fixo)
+   ========================= */
+.calendar{
+  display: grid;
+  grid-template-columns: 96px repeat(5, minmax(180px, 1fr));
+  grid-template-rows: 56px repeat(16, 38px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: auto;
+  background: #fff;
+  position: relative;
+
+  /* MUITO IMPORTANTE:
+     mantém o posicionamento previsível pela ordem do DOM */
+  grid-auto-flow: row;
+}
+
+/* Cabeçalho (canto) */
+.corner{
+  grid-column: 1;
+  grid-row: 1;
+  background: rgba(246,248,251,.75);
+  border-right: 1px solid rgba(15,23,42,.08);
+  border-bottom: 1px solid rgba(15,23,42,.08);
+}
+
+/* Cabeçalho dos dias */
+.day-head{
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: rgba(246,248,251,.75);
+  border-bottom: 1px solid rgba(15,23,42,.08);
+  border-right: 1px solid rgba(15,23,42,.08);
+}
+
+.day-num{
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: rgba(15,23,42,.78);
+  border: 1px solid rgba(15,23,42,.10);
+  background: #fff;
+}
+.day-num.is-today{
+  background: rgba(10,132,193,.12);
+  border-color: rgba(10,132,193,.30);
+  color: rgba(8,106,154,1);
+}
+
+.day-name{
+  font-size: 11px;
+  font-weight: 900;
+  color: rgba(15,23,42,.68);
+  letter-spacing: .02em;
+}
+
+/* ====== FIX PRINCIPAL ======
+   Horas SEMPRE na coluna 1 */
+.calendar > .time{
+  grid-column: 1 !important;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  padding: 7px 12px 0;
+  line-height: 1;
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(15,23,42,.55);
+
+  border-right: 1px solid rgba(15,23,42,.08);
+  border-bottom: 1px solid rgba(15,23,42,.06);
+  background: #fff;
+}
+
+/* Slots SEMPRE fora da coluna das horas (2..6) */
+.calendar > .slot{
+  grid-column: auto; /* deixa o auto-placement distribuir */
+  border-bottom: 1px solid rgba(15,23,42,.06);
+  border-right: 1px solid rgba(15,23,42,.08);
+  background: #fff;
+}
+
+/* Melhora leitura da grelha (linhas muito suaves) */
+.calendar > .slot{
+  background-image: linear-gradient(to bottom, rgba(15,23,42,.03), rgba(15,23,42,.03));
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/* =========================
+   EVENTS
+   ========================= */
+.event{
+  margin: 4px 6px;
+  border-radius: 14px;
+  padding: 10px 12px;
+  color: #fff;
+  box-shadow: 0 10px 18px rgba(2,6,23,.10);
+  overflow: hidden;
+  display: grid;
+  gap: 6px;
+  align-content: start;
+
+  /* garante que fica acima da grelha */
+  z-index: 2;
+}
+
+.ev-time{
+  font-size: 11px;
+  font-weight: 900;
+  opacity: .95;
+}
+
+.ev-title{
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.ev-meta{
+  font-size: 12px;
+  font-weight: 800;
+  opacity: .92;
+}
+
+/* Cores (mantive as tuas) */
+.ev-red{ background: #e84b3a; }
+.ev-salmon{ background: #ef7b71; }
+.ev-blue{ background: #4c86d9; }
+.ev-purple{ background: #6c6fd9; }
+.ev-teal{ background: #1ea7a4; }
+.ev-indigo{ background: #5b66d3; }
+
+/* =========================
+   RESPONSIVO
+   ========================= */
+@media (max-width: 980px){
+  .cal-top{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .calendar{
+    grid-template-columns: 88px repeat(5, minmax(160px, 1fr));
+  }
+}
+
+@media (max-width: 520px){
+  .cal-wrap{ padding: 12px; }
+  .calendar{
+    grid-template-columns: 84px repeat(5, minmax(150px, 1fr));
+    border-radius: 12px;
+  }
+}
