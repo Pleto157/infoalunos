@@ -1,0 +1,120 @@
+/* ./css/curso-plano-conclusao.css */
+
+/* Barra (select + botão à direita) */
+.bar{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(15,23,42,.08);
+  background: #fff;
+}
+
+.field-grow{
+  flex: 1;
+  min-width: 280px;
+}
+
+/* Grid 4 colunas (ano, relatório, formato) */
+.form-grid-4{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 0fr;
+  gap: 12px;
+  align-items: end;
+}
+
+/* Como não há 4.º campo real, usamos a actions abaixo */
+.actions-right{
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Alert */
+.alert{
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 10px;
+  align-items: start;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(15,23,42,.10);
+  background: #fff;
+}
+
+.alert-icon{
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: 950;
+  line-height: 1;
+}
+
+.alert-title{
+  font-weight: 950;
+  letter-spacing: -0.01em;
+}
+
+.alert-sub{
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.alert-danger{
+  border-color: rgba(185, 28, 28, .22);
+  background: rgba(185, 28, 28, .06);
+}
+.alert-danger .alert-icon{
+  border: 1px solid rgba(185, 28, 28, .25);
+  background: rgba(255,255,255,.85);
+  color: rgba(185, 28, 28, 1);
+}
+
+/* Tabelas compactas + zebra subtil */
+.table-sm thead th{ padding: 9px 10px; font-size: 12px; }
+.table-sm tbody td{ padding: 9px 10px; font-size: 13px; }
+
+.table-striped tbody tr:nth-child(even) td{
+  background: rgba(15,23,42,.03);
+}
+
+.table-scroll-xl{
+  max-height: 360px;
+}
+
+.x{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  border: 1px solid rgba(185, 28, 28, .25);
+  background: rgba(255,255,255,.85);
+  color: rgba(185, 28, 28, 1);
+  font-weight: 950;
+}
+
+/* Responsivo */
+@media (max-width: 980px){
+  .bar{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actions-right{
+    justify-content: stretch;
+  }
+  .actions-right .btn{
+    width: 100%;
+  }
+
+  .table-wrap .table{
+    min-width: 980px;
+  }
+}

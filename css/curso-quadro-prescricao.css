@@ -1,0 +1,48 @@
+/* ./css/curso-quadro-prescricao.css */
+
+/* Texto corrido mais legível */
+.prose{
+  line-height: 1.55;
+  font-size: 13px;
+}
+
+.prose p{
+  margin: 0 0 10px;
+}
+
+/* Linha informativa (igual à usada noutras páginas) */
+.info-line{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(10,132,193,.18);
+  background: rgba(10,132,193,.06);
+  color: rgba(15,23,42,.85);
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.info-dot{
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(10,132,193,.25);
+  background: rgba(255,255,255,.85);
+  display: grid;
+  place-items: center;
+  font-weight: 950;
+  color: rgba(8,106,154,1);
+  line-height: 1;
+  flex: 0 0 auto;
+}
+
+/* Links no texto */
+.prose a{
+  font-weight: 900;
+  text-decoration: none;
+}
+.prose a:hover{
+  text-decoration: underline;
+}

@@ -1,0 +1,263 @@
+<!-- curso-historico-disciplinas-aprovadas.html -->
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InfoAlunos — Curso • Histórico de disciplinas aprovadas</title>
+
+  <!-- CSS global (obrigatório) -->
+  <link rel="stylesheet" href="./css/dashboard.css" />
+  <!-- CSS específico da página (obrigatório quando aplicável) -->
+  <link rel="stylesheet" href="./css/curso-historico-disciplinas-aprovadas.css" />
+</head>
+
+<body class="page-dashboard">
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="brand">
+        <img class="brand-logo" src="img/logo-uma.png" alt="Universidade da Madeira" />
+        <div class="brand-text">
+          <div class="brand-name">InfoAlunos</div>
+          <div class="brand-sub">Serviço de Informação dos Alunos</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topbar-center">
+      <div class="topbar-title">InfoAlunos — Serviço de Informação dos Alunos</div>
+      <div class="topbar-version">v3.1.4</div>
+    </div>
+
+    <div class="topbar-right">
+      <nav class="topbar-actions" aria-label="Ações rápidas">
+        <a class="chip" href="./correio.html">O meu Correio</a>
+        <a class="chip" href="./horario.html">O meu Horário</a>
+        <a class="chip" href="./servicos-matriculas-inscricoes.html">Matrículas/Inscrições</a>
+      </nav>
+
+      <div class="user">
+        <div class="lang">
+          <a href="#" class="lang-link">PT</a>
+          <span class="lang-sep">|</span>
+          <a href="#" class="lang-link">EN</a>
+        </div>
+        <img class="user-avatar" src="img/avatar.jpg" alt="Utilizador" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Layout -->
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Menu principal">
+      <nav class="nav">
+        <a class="nav-link" href="./index.html">Início</a>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Geral</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./geral-processos.html">Processos</a></li>
+            <li><a class="nav-sublink" href="./geral-dados-pessoais.html">Dados pessoais</a></li>
+            <li><a class="nav-sublink" href="./geral-privacidade.html">Privacidade</a></li>
+            <li><a class="nav-sublink" href="./geral-ajuda.html">Ajuda</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Serviços</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./servicos-pagamentos.html">Pagamentos</a></li>
+            <li><a class="nav-sublink" href="./servicos-matriculas-inscricoes.html">Matrículas/Inscrições</a></li>
+            <li><a class="nav-sublink" href="./servicos-inscricao-turmas.html">Inscrição em turmas</a></li>
+            <li><a class="nav-sublink" href="./servicos-requerimentos.html">Requerimentos</a></li>
+            <li><a class="nav-sublink" href="./servicos-cartao-universitario.html">Cartão universitário</a></li>
+            <li><a class="nav-sublink" href="https://www.uma.pt/sobre/servico-apoio-estudantes/accao-social/?IDM=PT&ID0=1768240254&ID1=&ID2=500&ID3=be7838a166132ead94286c581bfa56ea">SASUMa — Bolsas</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Concursos</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./concursos-candidaturas.html">Candidaturas</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Avaliação</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./avaliacao-pautas.html">Pautas</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-reclamacao-nota.html">Reclamação de nota</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-inqueritos.html">Inquéritos</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-resultados-inqueritos.html">Resultados de inquéritos</a></li>
+            <li><a class="nav-sublink" href="./avaliacao-inquerito-raides.html">Inquérito RAIDES</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Creditações</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./creditacoes-lista-processos.html">Lista de processos</a></li>
+            <li><a class="nav-sublink" href="./creditacoes-novo-processo.html">Novo processo</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Documentos</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./documentos-academicos.html">Académicos</a></li>
+            <li><a class="nav-sublink" href="./documentos-declaracoes.html">Declarações</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Aula</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./aula-marcar-presenca.html">Marcar presença</a></li>
+            <li><a class="nav-sublink" href="./aula-calendario.html">Calendário</a></li>
+            <li><a class="nav-sublink" href="./aula-sumarios.html">Sumários</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Disciplina</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./disciplina-ficha.html">Ficha</a></li>
+            <li><a class="nav-sublink" href="./disciplina-programa.html">Programa</a></li>
+            <li><a class="nav-sublink" href="./disciplina-ficheiros.html">Ficheiros</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group" open>
+          <summary class="nav-summary">Curso</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./curso-ficha-curricular.html">Ficha curricular</a></li>
+            <li><a class="nav-sublink" href="./horario.html">Horários</a></li>
+            <li><a class="nav-sublink" href="./curso-historico-matriculas-inscricoes.html">Histórico de matrículas/inscrições</a></li>
+            <li><a class="nav-sublink is-active" href="./curso-historico-disciplinas-aprovadas.html">Histórico de disciplinas aprovadas</a></li>
+            <li><a class="nav-sublink" href="./curso-transicao-bolonha.html">Transição para Bolonha</a></li>
+            <li><a class="nav-sublink" href="./curso-plano-conclusao.html">Plano de conclusão</a></li>
+            <li><a class="nav-sublink" href="./curso-quadro-prescricao.html">Quadro de prescrição</a></li>
+            <li><a class="nav-sublink" href="./curso-atividades-academicas.html">Atividades académicas do aluno</a></li>
+          </ul>
+        </details>
+
+        <details class="nav-group">
+          <summary class="nav-summary">Instituição</summary>
+          <ul class="nav-sub">
+            <li><a class="nav-sublink" href="./instituicao-estrutura-organica.html">Estrutura orgânica</a></li>
+          </ul>
+        </details>
+      </nav>
+    </aside>
+
+    <!-- Conteúdo -->
+    <main class="main" role="main">
+      <div class="page-head">
+        <div>
+          <div class="kicker">Curso</div>
+          <h1 class="page-title">Histórico de disciplinas aprovadas</h1>
+        </div>
+      </div>
+
+      <!-- Pesquisa de Cursos -->
+      <section class="card">
+        <header class="card-header">
+          <h2 class="card-title">Pesquisa de Cursos</h2>
+          <div class="card-meta">Selecione o curso e/ou o ano letivo.</div>
+        </header>
+        <div class="card-body">
+          <form class="form" action="#" method="get">
+            <div class="form-grid form-grid-3">
+              <label class="field">
+                <span class="label">Curso</span>
+                <select class="control" name="curso">
+                  <option value="">— Selecione —</option>
+                  <option>Tecnologias e Programação de Sistemas de Informação</option>
+                  <option>Engenharia Informática</option>
+                  <option>Gestão</option>
+                </select>
+              </label>
+
+              <label class="field field-span-2">
+                <span class="label">Ano Letivo</span>
+                <select class="control" name="ano">
+                  <option value="">— Todos —</option>
+                  <option>2025/26</option>
+                  <option>2024/25</option>
+                  <option>2023/24</option>
+                </select>
+              </label>
+
+              <div class="field field-actions">
+                <span class="label label-ghost">.</span>
+                <button class="btn" type="submit">Pesquisar…</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Disciplina -->
+      <section class="card">
+        <header class="card-header">
+          <h2 class="card-title">Disciplina</h2>
+          <div class="card-meta">Filtre por tipo de situação.</div>
+        </header>
+        <div class="card-body">
+          <form class="form" action="#" method="get">
+            <div class="row-toolbar">
+              <label class="field field-grow">
+                <span class="label">Tipo de situação</span>
+                <select class="control" name="situacao">
+                  <option value="">— Selecione —</option>
+                  <option>Aprovada</option>
+                  <option>Inscrita</option>
+                  <option>Em curso</option>
+                </select>
+              </label>
+              <button class="btn" type="submit">Pesquisar…</button>
+            </div>
+          </form>
+
+          <div class="info-line">
+            <span class="info-dot" aria-hidden="true">i</span>
+            <span>Não foram encontrados registos ou falta escolher o ano letivo e/ou curso!</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Unidades de Crédito -->
+      <section class="card">
+        <header class="card-header">
+          <h2 class="card-title">Unidades de Crédito</h2>
+        </header>
+        <div class="card-body">
+          <div class="info-line">
+            <span class="info-dot" aria-hidden="true">i</span>
+            <span>Não foram encontrados registos ou falta escolher o ano letivo e/ou curso!</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Opções Complementares -->
+      <section class="card">
+        <header class="card-header">
+          <h2 class="card-title">Opções Complementares</h2>
+        </header>
+        <div class="card-body">
+          <div class="info-line">
+            <span class="info-dot" aria-hidden="true">i</span>
+            <span>Não foram encontrados registos ou falta escolher o ano letivo e/ou curso!</span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="muted">© Universidade da Madeira — InfoAlunos</div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

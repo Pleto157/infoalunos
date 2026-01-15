@@ -1,0 +1,191 @@
+/* ./css/instituicao-estrutura-organica.css */
+
+/* Layout em duas colunas dentro do main */
+.split{
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 16px;
+  align-items: start;
+  margin-top: 16px;
+}
+
+/* Pesquisa */
+.form-grid-search{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 12px;
+  align-items: end;
+}
+.actions-right{
+  display: flex;
+  justify-content: flex-end;
+}
+.hint{
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/* Cabeçalho com tools à direita */
+.card-header-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.card-tools{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+/* “Tree” simples */
+.tree{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+.tree-item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(15,23,42,.08);
+  background: #fff;
+}
+.tree-toggle{
+  width: 22px;
+  height: 22px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(10,132,193,.22);
+  background: rgba(10,132,193,.08);
+  color: rgba(8,106,154,1);
+  font-weight: 950;
+  flex: 0 0 auto;
+}
+.tree-name{
+  font-weight: 900;
+  color: rgba(15,23,42,.88);
+}
+.tree-link{
+  margin-left: auto;
+  font-weight: 900;
+  font-size: 12px;
+  text-decoration: none;
+}
+.tree-link:hover{ text-decoration: underline; }
+
+/* Tabs CSS */
+.tabs-state{
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.tabs-css .tab-panel{ display: none; }
+#tab-dados:checked ~ .card-body .tab-panel-dados{ display: block; }
+#tab-cargos:checked ~ .card-body .tab-panel-cargos{ display: block; }
+#tab-ficheiros:checked ~ .card-body .tab-panel-ficheiros{ display: block; }
+#tab-areas:checked ~ .card-body .tab-panel-areas{ display: block; }
+
+#tab-dados:checked ~ .tabs label[for="tab-dados"],
+#tab-cargos:checked ~ .tabs label[for="tab-cargos"],
+#tab-ficheiros:checked ~ .tabs label[for="tab-ficheiros"],
+#tab-areas:checked ~ .tabs label[for="tab-areas"]{
+  background: #fff;
+  border-color: var(--border);
+  border-bottom-color: #fff;
+  color: rgba(8,106,154,1);
+}
+
+.tabs-4{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Secções */
+.section-title{
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 950;
+  letter-spacing: -0.01em;
+}
+
+/* “Key/Value” skeleton (estático) */
+.kv-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 12px;
+  margin-bottom: 14px;
+}
+.kv-span-2{ grid-column: span 2; }
+
+.kv .k{
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(15,23,42,.72);
+  margin-bottom: 6px;
+}
+.kv .v{
+  border-radius: 10px;
+  border: 1px solid rgba(15,23,42,.08);
+  background: rgba(15,23,42,.03);
+  height: 34px;
+}
+.kv .v.tall{
+  height: 84px;
+}
+
+.skeleton{
+  position: relative;
+  overflow: hidden;
+}
+.skeleton::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.55), transparent);
+  transform: translateX(-60%);
+  animation: shimmer 1.6s infinite;
+}
+@keyframes shimmer{
+  0%{ transform: translateX(-60%); }
+  100%{ transform: translateX(60%); }
+}
+
+.empty{
+  padding: 12px;
+  border: 1px dashed rgba(15,23,42,.16);
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,.7);
+}
+.empty p{ margin: 8px 0 0; font-size: 12px; }
+
+.flag{
+  margin-left: 6px;
+  font-size: 14px;
+  vertical-align: -1px;
+}
+
+/* Responsivo */
+@media (max-width: 980px){
+  .split{
+    grid-template-columns: 1fr;
+  }
+  .form-grid-search{
+    grid-template-columns: 1fr;
+  }
+  .actions-right .btn{
+    width: 100%;
+  }
+  .kv-grid{
+    grid-template-columns: 1fr;
+  }
+  .kv-span-2{
+    grid-column: auto;
+  }
+}

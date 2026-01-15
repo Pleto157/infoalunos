@@ -1,0 +1,74 @@
+/* ./css/curso-historico-matriculas-inscricoes.css */
+
+/* Cabeçalho do card com links à direita (como no original) */
+.card-header-split{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.header-links{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.header-links .sep{
+  opacity: .6;
+}
+
+.helper-right{
+  text-align: right;
+}
+
+/* Barra de filtro (tipo de avaliação + botão) */
+.insc-toolbar{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(15,23,42,.08);
+  background: #fff;
+  margin-bottom: 12px;
+}
+
+.field-grow{
+  flex: 1;
+  min-width: 260px;
+}
+
+/* Tabelas compactas + zebra subtil */
+.table-sm thead th{ padding: 9px 10px; font-size: 12px; }
+.table-sm tbody td{ padding: 9px 10px; font-size: 13px; }
+
+.table-striped tbody tr:nth-child(even) td{
+  background: rgba(15,23,42,.03);
+}
+
+/* Scroll maior para a tabela grande */
+.table-scroll-xl{
+  max-height: 320px;
+}
+
+/* Responsivo */
+@media (max-width: 980px){
+  .insc-toolbar{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* garante scroll horizontal quando necessário */
+  .table-wrap .table{
+    min-width: 860px;
+  }
+
+  .helper-right{
+    text-align: left;
+  }
+}

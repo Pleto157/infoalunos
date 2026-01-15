@@ -1,0 +1,52 @@
+/* ./css/curso-historico-disciplinas-aprovadas.css */
+
+.row-toolbar{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(15,23,42,.08);
+  background: #fff;
+  margin-bottom: 12px;
+}
+
+.field-grow{
+  flex: 1;
+  min-width: 260px;
+}
+
+/* Linha informativa (replica o aviso do sistema original, mas clean) */
+.info-line{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(10,132,193,.18);
+  background: rgba(10,132,193,.06);
+  color: rgba(15,23,42,.85);
+  font-size: 13px;
+}
+
+.info-dot{
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(10,132,193,.25);
+  background: rgba(255,255,255,.85);
+  display: grid;
+  place-items: center;
+  font-weight: 950;
+  color: rgba(8,106,154,1);
+  line-height: 1;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 980px){
+  .row-toolbar{
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
